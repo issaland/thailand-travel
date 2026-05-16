@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>泰国慢旅行攻略 | 2026中秋国庆 9.25-10.5</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Cormorant+Garamond:wght@400;500;600&display=swap');
+        
+        :root {
+            --gold: #C9A96E;
+            --dark: #1a1a2e;
+            --cream: #FAF8F5;
+            --teal: #00897B;
+            --coral: #E07A5F;
+            --jungle: #2D6A4F;
+            --ocean: #0077B6;
+            --sand: #E8DDD3;
+            --sunset: #F4845F;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background: var(--cream);
+            color: var(--dark);
+            line-height: 1.8;
+        }
+        
+        /* Hero Section - Photo Background */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 700px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        .hero-bg {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('hero-bg.jpg') center center / cover no-repeat;
+            transform: scale(1.02);
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(
+                to bottom,
+                rgba(30,18,10,0.05) 0%,
+                rgba(30,18,10,0.02) 30%,
+                rgba(30,18,10,0.2) 55%,
+                rgba(30,18,10,0.6) 80%,
+                rgba(30,18,10,0.8) 100%
+            );
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            padding: 2rem 2rem 5rem;
+            max-width: 800px;
+        }
+        
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            color: #fff;
+            margin-bottom: 0.3rem;
+            letter-spacing: 0.05em;
+            text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+        }
+        
+        .hero h1 span {
+            color: var(--gold);
+            display: block;
+            font-size: 4.5rem;
+            margin-top: 0.1em;
+            text-shadow: 0 2px 30px rgba(0,0,0,0.5);
+        }
+        
+        .hero-subtitle {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            color: rgba(255,255,255,0.85);
+            margin-top: 0.8rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            text-shadow: 0 1px 10px rgba(0,0,0,0.5);
+        }
+        
+        .hero-date {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.6rem 2rem;
+            border: 1px solid rgba(255,255,255,0.6);
+            border-radius: 30px;
+            color: #fff;
+            font-size: 0.95rem;
+            letter-spacing: 0.12em;
+            backdrop-filter: blur(8px);
+            background: rgba(255,255,255,0.1);
+        }
+        
+        .hero-tags {
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 0.7rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .hero-tag {
+            padding: 0.35rem 1rem;
+            background: rgba(255,255,255,0.12);
+            backdrop-filter: blur(6px);
+            border-radius: 20px;
+            color: rgba(255,255,255,0.9);
+            font-size: 0.8rem;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        /* Scroll hint */
+        .scroll-hint {
+            position: absolute;
+            bottom: 1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            animation: bounce 2s infinite;
+        }
+        
+        .scroll-hint::after {
+            content: '';
+            display: block;
+            width: 1px;
+            height: 30px;
+            background: rgba(255,255,255,0.4);
+            margin: 0.5rem auto 0;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(5px); }
+        }
+        
+        /* Main Content */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        /* Section Styling */
+        .section {
+            padding: 5rem 0;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+        
+        .section-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .section-header .subtitle {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            color: var(--gold);
+            letter-spacing: 0.2em;
+        }
+        
+        .section-divider {
+            width: 60px;
+            height: 2px;
+            background: var(--gold);
+            margin: 1rem auto;
+        }
+        
+        /* Overview Cards */
+        .overview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .overview-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            border: 1px solid rgba(201, 169, 110, 0.15);
+        }
+        
+        .overview-card h3 {
+            font-size: 1.1rem;
+            color: var(--teal);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .overview-card p, .overview-card li {
+            font-size: 0.92rem;
+            line-height: 1.9;
+            color: #444;
+        }
+        
+        .overview-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .overview-card li::before {
+            content: '\2022';
+            color: var(--gold);
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        
+        /* Route Map */
+        .route-section {
+            background: #2c1810;
+            padding: 4rem 0;
+            color: #fff;
+        }
+        
+        .route-flow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 2rem;
+        }
+        
+        .route-city {
+            background: rgba(201, 169, 110, 0.12);
+            border: 1px solid rgba(201, 169, 110, 0.6);
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            color: var(--gold);
+            text-align: center;
+        }
+        
+        .route-city .days {
+            display: block;
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.6);
+            margin-top: 0.2rem;
+        }
+        
+        .route-arrow {
+            color: var(--gold);
+            font-size: 1.2rem;
+        }
+        
+        /* Day Cards */
+        .day-card {
+            background: #fff;
+            border-radius: 20px;
+            margin-bottom: 2.5rem;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+            border: 1px solid rgba(0,0,0,0.04);
+        }
+        
+        .day-header {
+            padding: 1.5rem 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .day-num {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #fff;
+            flex-shrink: 0;
+        }
+        
+        .day-chiangmai { background: var(--teal); }
+        .day-phuket { background: var(--ocean); }
+        .day-travel { background: var(--coral); }
+        
+        .day-info h3 {
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+        
+        .day-info .date {
+            font-size: 0.85rem;
+            color: #888;
+            margin-top: 0.2rem;
+        }
+        
+        .day-body {
+            padding: 2rem;
+        }
+        
+        .time-block {
+            margin-bottom: 1.8rem;
+            padding-left: 1.5rem;
+            border-left: 2px solid rgba(201, 169, 110, 0.3);
+        }
+        
+        .time-block:last-child { margin-bottom: 0; }
+        
+        .time-label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+        }
+        
+        .time-block h4 {
+            font-size: 1.05rem;
+            margin-bottom: 0.4rem;
+            color: var(--dark);
+        }
+        
+        .time-block p {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        /* Hotel & Restaurant Cards */
+        .rec-box {
+            background: linear-gradient(135deg, #faf8f5 0%, #f5f0eb 100%);
+            border-radius: 12px;
+            padding: 1.2rem 1.5rem;
+            margin-top: 1rem;
+            border-left: 3px solid var(--gold);
+        }
+        
+        .rec-box.hotel { border-left-color: var(--ocean); }
+        .rec-box.food { border-left-color: var(--coral); }
+        
+        .rec-box h5 {
+            font-size: 0.85rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 0.5rem;
+        }
+        
+        .rec-box .name {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        
+        .rec-box .desc {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 0.3rem;
+        }
+        
+        .rec-box .price {
+            font-size: 0.82rem;
+            color: var(--gold);
+            margin-top: 0.3rem;
+            font-weight: 500;
+        }
+        
+        /* Hotel Summary Table */
+        .hotel-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-top: 2rem;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+        
+        .hotel-table thead {
+            background: var(--dark);
+            color: #fff;
+        }
+        
+        .hotel-table th {
+            padding: 1rem 1.2rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-align: left;
+            letter-spacing: 0.05em;
+        }
+        
+        .hotel-table td {
+            padding: 1rem 1.2rem;
+            font-size: 0.88rem;
+            border-bottom: 1px solid #f0ebe5;
+            background: #fff;
+        }
+        
+        .hotel-table tr:last-child td { border-bottom: none; }
+        
+        .hotel-table .hotel-name {
+            font-weight: 600;
+            color: var(--dark);
+        }
+        
+        .hotel-table .hotel-rating {
+            color: var(--gold);
+            font-weight: 600;
+        }
+        
+        /* Tips Section */
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .tip-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.04);
+        }
+        
+        .tip-card h4 {
+            font-size: 1rem;
+            margin-bottom: 0.8rem;
+            color: var(--teal);
+        }
+        
+        .tip-card p, .tip-card li {
+            font-size: 0.88rem;
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .tip-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .tip-card li::before {
+            content: '\2192';
+            color: var(--gold);
+            margin-right: 0.5rem;
+        }
+        
+        /* Budget Section */
+        .budget-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            margin-top: 2rem;
+        }
+        
+        .budget-table thead {
+            background: var(--jungle);
+            color: #fff;
+        }
+        
+        .budget-table th {
+            padding: 1rem 1.5rem;
+            font-size: 0.85rem;
+            text-align: left;
+        }
+        
+        .budget-table td {
+            padding: 0.9rem 1.5rem;
+            font-size: 0.88rem;
+            border-bottom: 1px solid #f0ebe5;
+            background: #fff;
+        }
+        
+        .budget-table tr:last-child td { border-bottom: none; }
+        .budget-table .total { font-weight: 700; background: #faf8f5; }
+        
+        /* Footer */
+        .footer {
+            background: #2c1810;
+            color: rgba(255,255,255,0.6);
+            text-align: center;
+            padding: 3rem 2rem;
+            font-size: 0.85rem;
+        }
+        
+        .footer .motto {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .hero h1 span { font-size: 2.8rem; }
+            .hero-content { padding: 1.5rem 1.5rem 4rem; }
+            .section-header h2 { font-size: 1.8rem; }
+            .route-flow { flex-direction: column; }
+            .route-arrow { transform: rotate(90deg); }
+            .day-header { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>Sabai Sabai<span>THAILAND</span></h1>
+        <p class="hero-subtitle">Chiang Mai &middot; Phuket</p>
+        <div class="hero-date">2026.9.25 &mdash; 10.5 &#65372; 11天10晚</div>
+        <div class="hero-tags">
+            <span class="hero-tag">&#127969; 清迈古城</span>
+            <span class="hero-tag">&#9968; 泰式SPA</span>
+            <span class="hero-tag">&#127754; 卡塔海滩</span>
+            <span class="hero-tag">&#127860; 泰北美食</span>
+            <span class="hero-tag">&#128752; 安达曼海</span>
+        </div>
+    </div>
+    <div class="scroll-hint">SCROLL</div>
+</section>
+
+<!-- Overview -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <p class="subtitle">OVERVIEW</p>
+            <h2>行程总览</h2>
+            <div class="section-divider"></div>
+        </div>
+        
+        <div class="overview-grid">
+            <div class="overview-card">
+                <h3>&#128203; 行程概要</h3>
+                <ul>
+                    <li>总天数：11天10晚</li>
+                    <li>路线：上海 &rarr; 清迈（6晚）&rarr; 普吉岛（4晚）&rarr; 上海</li>
+                    <li>风格：慢节奏Chill游，不赶景点，享受当下</li>
+                    <li>交通：直飞 + 内陆航班</li>
+                    <li>清迈双酒店：Anantara 3晚 + The Inside House 3晚</li>
+                </ul>
+            </div>
+            <div class="overview-card">
+                <h3>&#127777; 9月底-10月初泰国天气</h3>
+                <ul>
+                    <li>清迈：24-32&#176;C，雨季尾巴，绿意盎然</li>
+                    <li>普吉：25-31&#176;C，偶有阵雨但不影响游玩</li>
+                    <li>日落约18:00-18:15，适合晚霞拍照</li>
+                    <li>属淡季，人少价优，体验更舒适</li>
+                    <li>建议随身带轻薄雨衣/折叠伞</li>
+                </ul>
+            </div>
+            <div class="overview-card">
+                <h3>&#9992; 航班建议</h3>
+                <ul>
+                    <li>去程：上海浦东 &rarr; 清迈（直飞约4.5h）</li>
+                    <li>内陆：清迈 &rarr; 普吉（约2h）</li>
+                    <li>回程：普吉 &rarr; 上海（直飞约4.5h）</li>
+                    <li>推荐航司：东航直飞、春秋航空、泰航</li>
+                    <li>9-10月淡季机票性价比高</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Route -->
+<section class="route-section">
+    <div class="container">
+        <div class="section-header">
+            <p class="subtitle" style="color: rgba(255,255,255,0.5);">ROUTE</p>
+            <h2 style="color: #fff;">旅行路线</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="route-flow">
+            <div class="route-city">&#9992; 上海<span class="days">出发</span></div>
+            <span class="route-arrow">&rarr;</span>
+            <div class="route-city">&#127969; 清迈<span class="days">6晚 | D1-D7</span></div>
+            <span class="route-arrow">&rarr;</span>
+            <div class="route-city">&#127754; 普吉岛<span class="days">4晚 | D7-D10</span></div>
+            <span class="route-arrow">&rarr;</span>
+            <div class="route-city">&#9992; 上海<span class="days">D11 返程</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- Detailed Itinerary -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <p class="subtitle">ITINERARY</p>
+            <h2>每日行程</h2>
+            <div class="section-divider"></div>
+        </div>
+
+        <!-- Day 1 -->
+        <div class="day-card">
+            <div class="day-header">
+                <div class="day-num day-chiangmai">D1</div>
+                <div class="day-info">
+                    <h3>抵达清迈 &middot; 兰纳古城初印象</h3>
+                    <p class="date">9月25日 周四 | Chiang Mai</p>
+                </div>
+            </div>
+            <div class="day-body">
+                <div class="time-block">
+                    <div class="time-label">下午</div>
+                    <h4>抵达清迈国际机场</h4>
+                    <p>东航MU205直飞，约13:25抵达。酒店安排接机，车程约15分钟到达湄平河畔的Anantara。入住后稍作休整，换上轻松衣物感受清迈的慢节奏。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">傍晚</div>
+                    <h4>塔佩门 &amp; 古城漫步</h4>
+                    <p>步行至清迈地标塔佩门（Tha Phae Gate），红砖城墙在夕阳下格外好看。穿过古城，经过三王纪念碑、契迪龙寺的外围，感受兰纳古城七百年的韵味。路边随手买杯泰式奶茶。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">晚餐</div>
+                    <h4>Huen Phen &middot; 正宗泰北菜初体验</h4>
+                    <p>清迈最有名的泰北料理餐厅之一，晚上的用餐区是一栋兰纳风格的老木屋，挂满古董和艺术品。必点：泰北香肠（Sai Ua）、Khao Soi金面、Nam Prik Ong肉酱。</p>
+                    <div class="rec-box food">
+                        <h5>推荐餐厅</h5>
+                        <div class="name">Huen Phen</div>
+                        <div class="desc">112 Rachamankha Rd | 兰纳老宅改建 | 清迈必打卡泰北菜</div>
+                        <div class="price">人均 &yen;50-80</div>
+                    </div>
+                </div>
+                <div class="rec-box hotel">
+                    <h5>入住酒店 &middot; 连住3晚</h5>
+                    <div class="name">Anantara Chiang Mai Resort &#11088;&#11088;&#11088;&#11088;&#11088;</div>
+                    <div class="desc">123 Charoen Prathet Rd | 湄平河畔 | 殖民风格与泰式设计融合 | 4.6分</div>
+                    <div class="price">约 &yen;1,200-1,800/晚 &middot; 含早餐</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 2 -->
+        <div class="day-card">
+            <div class="day-header">
+                <div class="day-num day-chiangmai">D2</div>
+                <div class="day-info">
+                    <h3>古城寺庙 &middot; 咖啡与手作</h3>
+                    <p class="date">9月26日 周五 | Chiang Mai</p>
+                </div>
+            </div>
+            <div class="day-body">
+                <div class="time-block">
+                    <div class="time-label">上午 9:00</div>
+                    <h4>契迪龙寺（Wat Chedi Luang）</h4>
+                    <p>清迈古城中心最壮观的寺庙，建于14世纪的大佛塔虽经地震残缺仍气势恢宏。清晨游客少，阳光透过树影洒在红砖佛塔上特别美。可以和寺内僧人简单交流（Monk Chat项目）。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">上午 10:30</div>
+                    <h4>帕辛寺（Wat Phra Singh）+ 尼曼路咖啡</h4>
+                    <p>兰纳建筑艺术的巅峰之作，寺内壁画描绘了古代清迈的日常生活。之后打双条车前往尼曼路（Nimman），这条文艺街区咖啡馆扎堆。推荐Ristr8to（拉花世界冠军）。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">午餐</div>
+                    <h4>Khao Soi Khun Yai &middot; 清迈第一碗金面</h4>
+                    <p>隐藏在小巷里的传奇小店，只卖Khao Soi（金面/咖喱面）一道菜。浓郁的椰奶咖喱汤底、酥脆炸面+软滑蛋面的双重口感，撒上酸菜和红葱头。米其林必比登推荐。</p>
+                    <div class="rec-box food">
+                        <h5>午餐推荐</h5>
+                        <div class="name">Khao Soi Khun Yai</div>
+                        <div class="desc">Sri Poom Rd Soi 8 | 米其林必比登 | 只此一味的极致</div>
+                        <div class="price">人均 &yen;15-25</div>
+                    </div>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">下午</div>
+                    <h4>Anantara Spa &middot; 河畔泰式按摩</h4>
+                    <p>回到酒店享受Anantara招牌SPA——在湄平河畔的水疗中心做2小时全身精油按摩+草药热敷。伴随着河水声和虫鸣鸟叫，把旅途疲惫彻底消除。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">晚餐</div>
+                    <h4>Blackitch Artisan Kitchen</h4>
+                    <p>清迈最潮的fine dining之一，主厨用泰北本地食材创作融合料理，只有一排吧台座位（需预约）。每道菜都是一件小型艺术品，搭配精选自然酒。体验从泰北传统到先锋创新的味觉旅程。</p>
+                    <div class="rec-box food">
+                        <h5>晚餐推荐</h5>
+                        <div class="name">Blackitch Artisan Kitchen</div>
+                        <div class="desc">Husadhisewee Rd Soi 1 | 吧台Omakase形式 | 创意泰北融合菜</div>
+                        <div class="price">人均 &yen;250-350</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 3 -->
+        <div class="day-card">
+            <div class="day-header">
+                <div class="day-num day-chiangmai">D3</div>
+                <div class="day-info">
+                    <h3>素贴山 &middot; 泰菜学堂 &middot; 夜市Chill</h3>
+                    <p class="date">9月27日 周六 | Chiang Mai</p>
+                </div>
+            </div>
+            <div class="day-body">
+                <div class="time-block">
+                    <div class="time-label">上午 8:30</div>
+                    <h4>素贴山双龙寺（Wat Phra That Doi Suthep）</h4>
+                    <p>清迈最神圣的寺庙，位于海拔1000米的素贴山顶。沿309级台阶（或坐缆车）而上，金色佛塔在晨光中闪耀。山顶平台可俯瞰整个清迈城，天气好时能看到层叠的山峦消失在云雾中。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">上午 10:30</div>
+                    <h4>泰菜烹饪课</h4>
+                    <p>参加半日泰菜烹饪课程，先逛当地菜市场认识香料和食材（香茅、南姜、青柠叶...），然后在热带花园厨房中学做3-4道菜：冬阴功汤、Pad Thai、芒果糯米饭、绿咖喱。做完当场吃。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">下午</div>
+                    <h4>酒店泳池 &amp; 河畔下午茶</h4>
+                    <p>回到Anantara，在湄平河畔的无边泳池边躺着消食。点一杯椰子水配精致甜点，看长尾船悠悠划过河面。翻翻书、刷刷手机，这就是chill度假该有的样子。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">傍晚/晚餐</div>
+                    <h4>周六夜市（Saturday Night Market）</h4>
+                    <p>清迈周六夜市从Wualai Road展开，全长约1公里。手工银饰、扎染布艺、木雕挂件、泰北小吃一路逛不停。边走边吃：烤猪颈肉、芒果糯米饭、泰式春卷、椰子冰淇淋。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 4 -->
+        <div class="day-card">
+            <div class="day-header">
+                <div class="day-num day-chiangmai">D4</div>
+                <div class="day-info">
+                    <h3>换酒店 &middot; 古城精品 &middot; 大象友善</h3>
+                    <p class="date">9月28日 周日 | Chiang Mai</p>
+                </div>
+            </div>
+            <div class="day-body">
+                <div class="time-block">
+                    <div class="time-label">上午 8:00</div>
+                    <h4>大象友善营地体验</h4>
+                    <p>前往清迈郊区的Elephant Nature Park或类似友善营地（车程约1小时）。这里不骑乘大象，而是喂食、帮它们洗澡、在自然环境中观察它们的日常。和这些温柔巨兽面对面互动，是终身难忘的体验。半日行程，中午返回。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">午餐</div>
+                    <h4>Meena Rice Based Cuisine</h4>
+                    <p>隐藏在稻田中的网红餐厅，全部用有机大米为主题创作菜品。坐在露天阳台上，面前是一望无际的翠绿稻田，微风拂面，吃着用本地食材做的健康泰餐，这画面太治愈了。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">下午</div>
+                    <h4>入住 The Inside House &middot; 古城中心</h4>
+                    <p>下午Check-in The Inside House——清迈古城内最精致的精品酒店之一。每间客房以手工艺品装饰，私人泳池被绿意花园环绕。位于古城核心，步行可达所有主要寺庙和夜市。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">晚餐</div>
+                    <h4>SP Chicken &middot; 清迈烤鸡王</h4>
+                    <p>全清迈最好吃的烤鸡——外皮焦脆流油，肉质多汁鲜嫩。配上糯米饭和辣酱，简单却极致。连续多年被各大美食榜推荐，住在古城内步行即到。</p>
+                    <div class="rec-box food">
+                        <h5>晚餐推荐</h5>
+                        <div class="name">SP Chicken</div>
+                        <div class="desc">Soi 1 Samlan Rd | 清迈排名第一的烤鸡 | 本地人最爱</div>
+                        <div class="price">人均 &yen;20-30</div>
+                    </div>
+                </div>
+                <div class="rec-box hotel">
+                    <h5>入住酒店 &middot; 连住3晚</h5>
+                    <div class="name">The Inside House &#11088;&#11088;&#11088;&#11088;&#11088;</div>
+                    <div class="desc">56 Samlarn Rd, Phra Sing | 古城中心 | 私人花园泳池 | Google 4.8分</div>
+                    <div class="price">约 &yen;1,500-2,200/晚 &middot; 含早餐</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 5 -->
+        <div class="day-card">
+            <div class="day-header">
+                <div class="day-num day-chiangmai">D5</div>
+                <div class="day-info">
+                    <h3>田园四季 &middot; 稻田下午茶 &middot; 古城夜</h3>
+                    <p class="date">9月29日 周一 | Chiang Mai</p>
+                </div>
+            </div>
+            <div class="day-body">
+                <div class="time-block">
+                    <div class="time-label">上午</div>
+                    <h4>睡到自然醒 &middot; 私人泳池早晨</h4>
+                    <p>The Inside House的私人泳池被热带植物环绕，清晨无人打扰时泡在水中看日光穿过树叶。享用酒店精心准备的早餐，之后在花园中发呆读书。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">中午</div>
+                    <h4>清迈四季酒店稻田下午茶</h4>
+                    <p>预约四季酒店的稻田体验。在标志性的稻田栈道旁享用下午茶，群山+稻田+水牛的田园画卷让人心旷神怡。也可以报名稻田瑜伽或冥想课程。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">下午</div>
+                    <h4>Lila Thai Massage</h4>
+                    <p>Lila的按摩师全部是前女子监狱受训释放的女性，通过这份工作重新融入社会。手法专业力道十足，2小时泰式按摩只要200多泰铢，性价比极高还很有意义。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">晚餐</div>
+                    <h4>David's Kitchen &middot; 清迈Fine Dining</h4>
+                    <p>清迈评分最高的法式融合餐厅，主厨David是位澳洲厨师，以法餐技法诠释泰国食材。花园中的独栋别墅用餐环境，记得预约。</p>
+                    <div class="rec-box food">
+                        <h5>晚餐推荐</h5>
+                        <div class="name">David's Kitchen</div>
+                        <div class="desc">Chiang Mai-Lamphun Rd | 法式融合 | TripAdvisor清迈#1</div>
+                        <div class="price">人均 &yen;300-450</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 6 -->
+        <div class="day-card">
+            <div class="day-header">
+                <div class="day-num day-chiangmai">D6</div>
+                <div class="day-info">
+                    <h3>清迈自由日 &middot; 慢生活收尾</h3>
+                    <p class="date">9月30日 周二 | Chiang Mai</p>
+                </div>
+            </div>
+            <div class="day-body">
+                <div class="time-block">
+                    <div class="time-label">上午</div>
+                    <h4>古城晨间散步 &middot; 寺庙布施</h4>
+                    <p>如果起得来（6:00左右），可以看一场僧侣清晨化缘。橙色僧袍的队列安静走过古城街道，信众跪地奉上食物。即使只是旁观，也能感受到一种平和的力量。之后在古城内随意走走。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">中午</div>
+                    <h4>Graph Cafe &amp; One Nimman商圈</h4>
+                    <p>清迈咖啡文化的代表——Graph Cafe，极简工业风空间+精品手冲。之后逛One Nimman综合商圈，集合了泰北设计师品牌、创意杂货和好吃的甜品店。买些伴手礼。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">下午</div>
+                    <h4>酒店私人泳池 &amp; 古城闲逛</h4>
+                    <p>最后半天完全自由安排。可以在The Inside House的花园泳池中泡一下午，也可以再去古城内走走那些没去过的小巷和寺庙。清迈古城不大，走哪算哪都有惊喜。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">晚餐</div>
+                    <h4>Woo Cafe &middot; 清迈告别夜</h4>
+                    <p>集合了餐厅、画廊和花店的复合空间，位于Charoen Rat路。在满是鲜花和艺术品的环境中享用最后一顿清迈晚餐。点一杯鸡尾酒为六天的清迈之旅做个温柔的总结。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 7 -->
+        <div class="day-card">
+            <div class="day-header">
+                <div class="day-num day-travel">D7</div>
+                <div class="day-info">
+                    <h3>转场普吉岛 &middot; The Shore初体验</h3>
+                    <p class="date">10月1日 周三 | Chiang Mai &rarr; Phuket</p>
+                </div>
+            </div>
+            <div class="day-body">
+                <div class="time-block">
+                    <div class="time-label">上午</div>
+                    <h4>清迈飞普吉岛</h4>
+                    <p>搭乘上午航班清迈&rarr;普吉（约2小时，泰航/亚航均有直飞）。中午前抵达普吉国际机场，酒店安排专车接机（约50分钟到达Kata Noi海滩）。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">下午</div>
+                    <h4>入住 The Shore &middot; 私人泳池Villa</h4>
+                    <p>The Shore at Katathani坐落在Kata Noi海滩的山坡上，每间Pool Villa都有独立的无边际泳池直面安达曼海。入住后换上泳衣，在私人泳池中边泡边看大海，这个开场够震撼。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">日落</div>
+                    <h4>Villa阳台日落</h4>
+                    <p>不用去任何地方——你的Villa就是最佳日落观景台。端一杯迎宾香槟，躺在日光床上，看太阳一点点沉入安达曼海。天空变橙、变粉、变紫，海面铺满金色碎光。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">晚餐</div>
+                    <h4>酒店 The Deck餐厅</h4>
+                    <p>第一晚不折腾，在酒店The Deck餐厅用晚餐。悬崖边的露台位置，脚下就是波光粼粼的海面。烤大虾、清蒸石斑、辣炒螃蟹，配上冰凉的Singha啤酒。</p>
+                </div>
+                <div class="rec-box hotel">
+                    <h5>入住酒店 &middot; 连住4晚</h5>
+                    <div class="name">The Shore at Katathani &#11088;&#11088;&#11088;&#11088;&#11088;</div>
+                    <div class="desc">14 Kata Noi Rd | 山坡海景Pool Villa | 俯瞰Kata Noi海滩 | Google 4.7分</div>
+                    <div class="price">约 &yen;3,000-5,000/晚 &middot; 含早餐 &middot; Pool Villa</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 8 -->
+        <div class="day-card">
+            <div class="day-header">
+                <div class="day-num day-phuket">D8</div>
+                <div class="day-info">
+                    <h3>跳岛一日游 &middot; 皮皮岛</h3>
+                    <p class="date">10月2日 周四 | Phi Phi Islands</p>
+                </div>
+            </div>
+            <div class="day-body">
+                <div class="time-block">
+                    <div class="time-label">上午 8:00</div>
+                    <h4>快艇出海 &middot; 皮皮岛一日游</h4>
+                    <p>乘坐快艇（酒店代订）前往皮皮岛群，约45分钟。途经竹子岛（Bamboo Island）白沙滩浮潜，水下能见度极高。再前往皮皮莱的著名Maya Bay（需预约名额）。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">中午</div>
+                    <h4>皮皮岛午餐 &amp; 浮潜</h4>
+                    <p>在皮皮岛主岛Tonsai Bay上岸午餐，海边餐厅烤海鲜拼盘+冰椰子汁。饭后在Monkey Beach附近再浮潜一轮，这里的猴子们也很有趣（注意保管物品）。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">下午</div>
+                    <h4>Khai岛 &middot; 蓝色果冻海</h4>
+                    <p>返程途中停靠Khai Nok Island——迷你小岛，四周环绕着果冻般清透的蓝绿色海水。做最后一次浮潜或在浅水区泡着。约16:00返回普吉。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">晚餐</div>
+                    <h4>Villa内Room Service</h4>
+                    <p>出海一天累了，回Villa后点一份Room Service，边泡私人泳池边吃。夜幕下的安达曼海黑蓝一片，只有远处渔船的灯光点缀。今天的运动量配得上一顿大餐。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 9 -->
+        <div class="day-card">
+            <div class="day-header">
+                <div class="day-num day-phuket">D9</div>
+                <div class="day-info">
+                    <h3>普吉老城 &middot; 攀牙湾 &middot; Beach Club</h3>
+                    <p class="date">10月3日 周五 | Phuket</p>
+                </div>
+            </div>
+            <div class="day-body">
+                <div class="time-block">
+                    <div class="time-label">上午 9:30</div>
+                    <h4>普吉老城（Phuket Old Town）</h4>
+                    <p>驱车前往普吉老城区（约30分钟）。Sino-Portuguese建筑——中葡混合风格的彩色老骑楼——是普吉最有文化底蕴的区域。沿Thalang Road和Soi Romanee拍照，每面墙都是打卡点。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">中午</div>
+                    <h4>One Chun Cafe &amp; 本地小吃</h4>
+                    <p>老城内最有人气的本地餐厅。必点：Hokkien Mee（福建面）、Moo Hong（红烧五花肉）、O-Tao（蚵仔煎）。正宗的普吉本地味道，和曼谷/清迈都不一样。</p>
+                    <div class="rec-box food">
+                        <h5>午餐推荐</h5>
+                        <div class="name">One Chun Cafe &amp; Restaurant</div>
+                        <div class="desc">48/1 Thalang Rd | 普吉老城地标 | 正宗娘惹+福建菜</div>
+                        <div class="price">人均 &yen;40-70</div>
+                    </div>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">下午</div>
+                    <h4>Promthep Cape日落 + Catch Beach Club</h4>
+                    <p>下午先去普吉最南端Promthep Cape看日落（270度无遮挡海景），然后转场至Surin Beach的Catch Beach Club——白色沙滩+DJ音乐+高品质鸡尾酒，感受普吉的夜生活vibe。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">晚餐</div>
+                    <h4>Catch Beach Club &middot; 海鲜晚餐</h4>
+                    <p>就在Beach Club吃一顿海鲜晚餐、喝着酒、踩着沙、听着电子乐。普吉最时髦的夜晚体验。</p>
+                    <div class="rec-box food">
+                        <h5>晚餐推荐</h5>
+                        <div class="name">Catch Beach Club</div>
+                        <div class="desc">Surin Beach | 普吉最潮Beach Club | 日落+DJ+海鲜</div>
+                        <div class="price">人均 &yen;300-500</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 10 -->
+        <div class="day-card">
+            <div class="day-header">
+                <div class="day-num day-phuket">D10</div>
+                <div class="day-info">
+                    <h3>最后的海滩日 &middot; Chill到极致</h3>
+                    <p class="date">10月4日 周六 | Phuket</p>
+                </div>
+            </div>
+            <div class="day-body">
+                <div class="time-block">
+                    <div class="time-label">上午</div>
+                    <h4>睡到自然醒 &middot; Villa慢早餐</h4>
+                    <p>最后一个完整的海滩日。不设闹钟，醒了再叫In-Villa早餐。热带水果、泰式蛋饼、现磨咖啡。然后在无边泳池里泡一个长长的上午澡，面朝大海放空一切。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">中午</div>
+                    <h4>Kata Noi海滩浮潜/游泳</h4>
+                    <p>The Shore脚下就是Kata Noi——普吉最美的小海滩之一。沙细水清、人又少。下山走几步就到，在海里泡一泡、浮潜看看鱼，或者就在沙滩椅上晒太阳。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">下午</div>
+                    <h4>最后一场Spa + 采买伴手礼</h4>
+                    <p>在酒店做最后一次SPA作为旅途收尾仪式。做完可以去附近的Kata商圈逛逛，买些泰国本土品牌香薰精油、椰子油护肤品、NaRaYa曼谷包等伴手礼。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">晚餐</div>
+                    <h4>Siam Supper Club &middot; 告别晚宴</h4>
+                    <p>普吉最具格调的西餐厅之一，复古爵士风装潢，周末有现场爵士乐演出。来一份Wellington牛排或龙虾，搭配一杯好酒，为这趟完美旅行画上句号。</p>
+                    <div class="rec-box food">
+                        <h5>晚餐推荐 &middot; 告别晚宴</h5>
+                        <div class="name">Siam Supper Club</div>
+                        <div class="desc">Laguna Area | 复古爵士风 | 现场Live Music</div>
+                        <div class="price">人均 &yen;300-500</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 11 -->
+        <div class="day-card">
+            <div class="day-header">
+                <div class="day-num day-travel">D11</div>
+                <div class="day-info">
+                    <h3>返程 &middot; Khob Khun Ka, Thailand</h3>
+                    <p class="date">10月5日 周日 | Phuket &rarr; Shanghai</p>
+                </div>
+            </div>
+            <div class="day-body">
+                <div class="time-block">
+                    <div class="time-label">上午</div>
+                    <h4>最后的泰国时光</h4>
+                    <p>在Villa享用最后一顿早餐，再看一眼无边泳池外的安达曼海。如果航班较晚，可以再下去Kata Noi沙滩踩一次细软白沙。收拾行李，带走满满的回忆和好肤色。</p>
+                </div>
+                <div class="time-block">
+                    <div class="time-label">中午/下午</div>
+                    <h4>前往普吉机场 &middot; 返回上海</h4>
+                    <p>酒店专车送至普吉国际机场（约50分钟）。搭乘直飞航班返回上海浦东（约4.5小时）。机场免税店最后补货——泰国免税品（欧莱雅、NaRaYa）性价比超高。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Hotel Summary -->
+<section class="section" style="background: #f8f5f0;">
+    <div class="container">
+        <div class="section-header">
+            <p class="subtitle">HOTELS</p>
+            <h2>酒店一览</h2>
+            <div class="section-divider"></div>
+        </div>
+        
+        <table class="hotel-table">
+            <thead>
+                <tr>
+                    <th>城市</th>
+                    <th>酒店</th>
+                    <th>入住</th>
+                    <th>晚数</th>
+                    <th>参考价格/晚</th>
+                    <th>评分</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>清迈</td>
+                    <td class="hotel-name">Anantara Chiang Mai Resort</td>
+                    <td>9.25-9.28</td>
+                    <td>3晚</td>
+                    <td>&yen;1,200-1,800</td>
+                    <td class="hotel-rating">4.6</td>
+                </tr>
+                <tr>
+                    <td>清迈</td>
+                    <td class="hotel-name">The Inside House</td>
+                    <td>9.28-10.1</td>
+                    <td>3晚</td>
+                    <td>&yen;1,500-2,200</td>
+                    <td class="hotel-rating">4.8</td>
+                </tr>
+                <tr>
+                    <td>普吉岛</td>
+                    <td class="hotel-name">The Shore at Katathani</td>
+                    <td>10.1-10.5</td>
+                    <td>4晚</td>
+                    <td>&yen;3,000-5,000</td>
+                    <td class="hotel-rating">4.7</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p style="margin-top: 1.5rem; font-size: 0.85rem; color: #888; text-align: center;">
+            * 价格为2026年9-10月淡季参考价，实际以预订为准。清迈换酒店可体验不同风格与区位。
+        </p>
+
+        <div class="overview-grid" style="margin-top: 2.5rem;">
+            <div class="overview-card">
+                <h3>&#127969; Anantara Chiang Mai</h3>
+                <ul>
+                    <li>湄平河畔五星级度假村</li>
+                    <li>殖民风格与泰式设计完美融合</li>
+                    <li>河畔无边泳池 + 顶级Spa</li>
+                    <li>步行10分钟到清迈夜市</li>
+                    <li>烹饪课 + 瑜伽 + 骑行等体验</li>
+                </ul>
+            </div>
+            <div class="overview-card">
+                <h3>&#127969; The Inside House</h3>
+                <ul>
+                    <li>清迈古城中心精品酒店</li>
+                    <li>手工艺品装饰，每间房独一无二</li>
+                    <li>私人花园泳池，绿意环绕</li>
+                    <li>步行可达主要寺庙和夜市</li>
+                    <li>Google 4.8分，个性化服务</li>
+                </ul>
+            </div>
+            <div class="overview-card">
+                <h3>&#127754; The Shore at Katathani</h3>
+                <ul>
+                    <li>Kata Noi山坡上的全Villa度假村</li>
+                    <li>每间Villa独立无边泳池+海景</li>
+                    <li>俯瞰普吉最美小海湾</li>
+                    <li>下山即达Kata Noi海滩</li>
+                    <li>顶级Spa + 多间餐厅</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Budget -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <p class="subtitle">BUDGET</p>
+            <h2>预算参考</h2>
+            <div class="section-divider"></div>
+        </div>
+        
+        <table class="budget-table">
+            <thead>
+                <tr>
+                    <th>项目</th>
+                    <th>明细</th>
+                    <th>预估费用（人民币/人）</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>国际机票</td>
+                    <td>上海-清迈 + 普吉-上海 经济舱往返</td>
+                    <td>&yen;3,000-5,000</td>
+                </tr>
+                <tr>
+                    <td>内陆机票</td>
+                    <td>清迈-普吉 单程</td>
+                    <td>&yen;400-800</td>
+                </tr>
+                <tr>
+                    <td>酒店住宿</td>
+                    <td>Anantara 3晚 + Inside House 3晚 + The Shore 4晚</td>
+                    <td>&yen;20,000-32,000</td>
+                </tr>
+                <tr>
+                    <td>餐饮</td>
+                    <td>含Fine Dining + 日常用餐 + Beach Club</td>
+                    <td>&yen;4,000-7,000</td>
+                </tr>
+                <tr>
+                    <td>活动体验</td>
+                    <td>跳岛出海、SPA、烹饪课、大象营</td>
+                    <td>&yen;2,500-4,000</td>
+                </tr>
+                <tr>
+                    <td>当地交通</td>
+                    <td>接机、包车、双条车、Grab</td>
+                    <td>&yen;800-1,500</td>
+                </tr>
+                <tr>
+                    <td>购物/其他</td>
+                    <td>伴手礼、免税店、小费等</td>
+                    <td>丰俭由人</td>
+                </tr>
+                <tr class="total">
+                    <td colspan="2"><strong>总计（不含购物）</strong></td>
+                    <td><strong>约 &yen;31,000-50,000 /人</strong></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p style="margin-top: 1.5rem; font-size: 0.85rem; color: #888; text-align: center;">
+            * 泰国淡季性价比极高，同等品质度假体验远低于欧洲/日本
+        </p>
+    </div>
+</section>
+
+<!-- Practical Tips -->
+<section class="section" style="background: #f8f5f0;">
+    <div class="container">
+        <div class="section-header">
+            <p class="subtitle">TIPS</p>
+            <h2>实用贴士</h2>
+            <div class="section-divider"></div>
+        </div>
+        
+        <div class="tips-grid">
+            <div class="tip-card">
+                <h4>&#128706; 签证 &amp; 入境</h4>
+                <ul>
+                    <li>中国护照免签入境泰国（2023年起永久免签）</li>
+                    <li>可停留最多30天，无需提前办理</li>
+                    <li>护照有效期需超过6个月</li>
+                    <li>建议打印往返机票和酒店确认单备查</li>
+                    <li>入境卡已取消，直接走自动通道</li>
+                </ul>
+            </div>
+            <div class="tip-card">
+                <h4>&#128176; 货币与支付</h4>
+                <ul>
+                    <li>泰铢（THB），当前约1元&asymp;5泰铢</li>
+                    <li>酒店/商场/餐厅普遍接受信用卡</li>
+                    <li>夜市/小店/双条车需现金</li>
+                    <li>推荐ATM取现（每笔手续费220THB）</li>
+                    <li>小费文化：按摩50-100THB，餐厅20-50THB</li>
+                </ul>
+            </div>
+            <div class="tip-card">
+                <h4>&#128241; 通讯与网络</h4>
+                <ul>
+                    <li>机场买AIS/TrueMove游客卡（约&yen;30-50）</li>
+                    <li>推荐True的Tourist SIM，15天无限流量</li>
+                    <li>或出发前在淘宝买泰国eSIM更方便</li>
+                    <li>酒店WiFi均免费且快速</li>
+                    <li>Grab打车APP必备（泰国版滴滴）</li>
+                </ul>
+            </div>
+            <div class="tip-card">
+                <h4>&#128087; 穿搭建议</h4>
+                <ul>
+                    <li>以轻薄透气为主：短裤、裙子、背心</li>
+                    <li>进寺庙：必须覆盖肩膀和膝盖（带条纱巾）</li>
+                    <li>防晒霜SPF50 + 墨镜 + 帽子（必备！）</li>
+                    <li>泳装至少带2套（普吉天天要穿）</li>
+                    <li>人字拖/凉鞋为主，运动鞋备一双即可</li>
+                </ul>
+            </div>
+            <div class="tip-card">
+                <h4>&#127860; 泰国用餐指南</h4>
+                <ul>
+                    <li>路边摊放心吃，卫生标准比想象中好</li>
+                    <li>怕辣提前说"Mai Pet"（不辣）</li>
+                    <li>泰餐用勺子送嘴，叉子拨菜到勺子上</li>
+                    <li>冰饮默认加冰，不加冰说"Mai Sai Nam Keng"</li>
+                    <li>7-11是旅行好伙伴：饭团、咖啡、防晒、药品</li>
+                </ul>
+            </div>
+            <div class="tip-card">
+                <h4>&#9888; 注意事项</h4>
+                <ul>
+                    <li>尊重皇室：不评论、不踩踏印有国王头像的纸币</li>
+                    <li>脱鞋入寺庙/部分商店（看门口有无鞋堆）</li>
+                    <li>不摸人头部（泰国文化禁忌）</li>
+                    <li>不对僧侣递东西给女性（需经由男性中转）</li>
+                    <li>雨季注意涂防蚊液（尤其清迈傍晚）</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Packing List -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <p class="subtitle">PACKING</p>
+            <h2>打包清单</h2>
+            <div class="section-divider"></div>
+        </div>
+        
+        <div class="overview-grid">
+            <div class="overview-card">
+                <h3>&#128092; 必备物品</h3>
+                <ul>
+                    <li>护照（有效期&gt;6个月）+ 复印件</li>
+                    <li>机票/酒店确认单（电子版即可）</li>
+                    <li>充电器 + 泰标插头（两脚扁头，和国内通用）</li>
+                    <li>防晒霜SPF50 + 晒后修复</li>
+                    <li>防蚊喷雾/贴（清迈傍晚蚊子多）</li>
+                    <li>泳装 x2 + 浮潜面罩（或当地买）</li>
+                    <li>轻薄雨衣或折叠伞</li>
+                    <li>遮肩纱巾（进寺庙用）</li>
+                </ul>
+            </div>
+            <div class="overview-card">
+                <h3>&#128203; 重要APP</h3>
+                <ul>
+                    <li><strong>Grab</strong> &mdash; 打车/叫外卖（必装）</li>
+                    <li><strong>Google Maps</strong> &mdash; 导航+离线地图</li>
+                    <li><strong>Klook / KKDay</strong> &mdash; 一日游/体验预订</li>
+                    <li><strong>Agoda</strong> &mdash; 东南亚酒店比价首选</li>
+                    <li><strong>翻译软件</strong> &mdash; 泰语翻译以防万一</li>
+                    <li><strong>XE Currency</strong> &mdash; 实时汇率换算</li>
+                </ul>
+            </div>
+            <div class="overview-card">
+                <h3>&#128138; 常备药品</h3>
+                <ul>
+                    <li>肠胃药（水土不服备用）</li>
+                    <li>创可贴 + 碘伏棉签</li>
+                    <li>晕船药（出海跳岛备用）</li>
+                    <li>防蚊止痒膏/青草膏</li>
+                    <li>退烧药 + 感冒药</li>
+                    <li>泰国本地神药：7-11有卖各种便宜药品</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p class="motto">"Sabai Sabai &mdash; 舒服就好"</p>
+    <p>2026 泰国慢旅行攻略 &middot; 清迈+普吉 &middot; 为Lisa定制</p>
+    <p style="margin-top: 0.5rem; font-size: 0.8rem;">Created with &#10084; &middot; Chill is the way</p>
+</footer>
+
+</body>
+</html>
